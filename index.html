@@ -1,117 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Ranjan Shrestha</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjan Shrestha</title>
+    <style>
+        /* CSS Styles - You can edit colors, fonts, and sizes here */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        /* Header Styles */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
 
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 0.5rem 2rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    </style>
 </head>
 <body>
-	<!----hero Section start---->
+    <!-- Header Section - Edit your name and description -->
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer | Designer | Creative Professional</p>
+    </header>
 
-	<div class="hero">
-		<nav>
-			<h2 class="logo">Parth<span>Leo</span></h2>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Skills</a></li>
-				<li><a href="#">Contact Me</a></li>
-			</ul>
-			<a href="https://wetheengineersdude.blogspot.com/" class="btn">Subscribe</a>
-		</nav>
+    <!-- Navigation - Edit links if needed -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-		<div class="content">
-			<h4>Hello, my name is</h4>
-			<h1>Ranjan <span>Shrestha</span></h1>
-			<h3>I'am a fucker.</h3>
-			<div class="newslatter">
-				<form>
-					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
-					<input type="submit" name="submit" value="Lets Start">
-				</form>
-			</div>
-		</div>
-	</div>
+    <!-- About Section - Edit your information -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Replace this text with your own information. Write about your background, experience, and passions.</p>
+    </section>
 
-	<!----About section start---->
-	<section class="about">
-		<div class="main">
-			<img src="img/main-img.jpg">
-			<div class="about-text">
-				<h2>About Me</h2>
-				<h5>Civil Enginner <span>& Programmer</span></h5>
-				<p>I am Gamer. </p>
-			</div>
-		</div>
-	</section>
+    <!-- Skills Section - Edit your skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>Content Writing</li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
 
-	<!-----service section start----------->
-	<div class="service">
-		<div class="title">
-			<h2>My Gaands</h2>
-		</div>
+    <!-- Projects Section - Edit your projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Description of your first project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of your second project.</p>
+            </div>
+            <!-- Add more project cards -->
+        </div>
+    </section>
 
-		<div class="box">
-			<div class="card">
-				<i class="fas fa-bars"></i>
-				<h5>Tits</h5>
-				<div class="pra">
-					<p>Mia</p>
+    <!-- Contact Section - Edit contact form if needed -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<i class="far fa-user"></i>
-				<h5>Dicc</h5>
-				<div class="pra">
-					<p>5 inches</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<i class="far fa-bell"></i>
-				<h5>Be a Gamer</h5>
-				<div class="pra">
-					<p>Battery sakinxa sala</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!------Contact Me------>
-	<div class="contact-me">
-		<p>Let's hear from you.</p>
-		<a class="button-two" href="#">Say Hi</a>
-	</div>
-
-	<!------footer start--------->
-	<footer>
-		<p>Rajan Shrestha</p>
-		<p>Visit my channel</p>
-		<div class="social">
-			<a href="#"><i class="fab fa-facebook-f"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
-			<a href="https://www.youtube.com/c/renjon2108"><i class="fab fa-dribbble"></i></a>
-		</div>
-		<p class="end">Copyright @ 2022 Ranajan shrethsa</p>
-	</footer>
+    <footer>
+        <!-- Edit footer content -->
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
